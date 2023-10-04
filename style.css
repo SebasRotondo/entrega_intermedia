@@ -1,0 +1,361 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    border: 1px solid black;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.nav__menu {
+    width: 100vw;
+    height: 3rem;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem;
+
+    box-shadow: 5px 5px 20px black;
+    z-index: 100;
+    position: fixed;
+
+
+
+}
+
+.logo a {
+
+    text-decoration: none;
+    color: black;
+    font-size: 2rem;
+    font-weight: 800;
+    border: 1px solid black;
+    padding: 0.3rem;
+
+
+}
+
+.menu-icon {
+    display: block;
+    color: black;
+
+    cursor: pointer;
+}
+
+.menu-icon svg {
+    width: 3rem;
+    height: 3rem;
+
+}
+
+.menu__lista {
+    display: none;
+    flex-wrap: wrap;
+
+    margin: 1rem;
+    z-index: 100 !important;
+    
+
+}
+
+
+input[type="checkbox"] {
+    display: none;
+    
+}
+
+input[type="checkbox"]:checked~.menu {
+    max-height: 100px;
+}
+
+
+.menu__lista li {
+    display: block;
+    padding: 0.5rem;
+    background-color: #fff;
+    font-size: 1.2rem;
+    text-align: right;
+    margin-right: 1rem;
+
+
+}
+
+.menu__lista a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    margin-right: 1rem;
+    
+}
+
+
+
+
+
+.imagen__principal {
+    width: 90vw;
+    height: 60vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    background-image: url(./img/roofs-4119874_1280.jpg);
+    background-size: cover;
+    background-position: center;
+    margin: 7rem auto 2rem;
+    box-shadow: 2px 2px 5px rgb(46, 38, 38);
+
+
+}
+
+.imagen__titulo {
+    color: black;
+    text-align: center;
+    width: 80%;
+    margin-top: 2rem;
+
+
+}
+
+.imagen__titulo h2 {
+    font-size: 3rem;
+    color: white;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 1px;
+}
+
+
+.ver__menu {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    margin: 1rem;
+    padding: 1rem;
+    line-height: 2rem;
+
+}
+
+.ver__menu a {
+    color: white;
+    background-color: black;
+    padding: 0.8rem;
+    border-radius: 10px;
+    width: 50vw;
+    text-decoration: none;
+
+
+}
+
+.reserva {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    margin: 1rem;
+    padding: 1.5rem;
+    line-height: 2.5rem;
+
+}
+
+.reserva2 {
+    margin-top: 8rem;
+}
+
+.ver__reserva {
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    padding: 3rem;
+
+}
+
+.ver__reserva input {
+    color: white;
+    background-color: black;
+    width: 50vw;
+    padding: 1.5rem;
+    border-radius: 10px;
+}
+
+.footer {
+    background-color: black;
+    padding: 0.5rem;
+
+}
+
+.footer iframe {
+
+    max-width: 100vw;
+    text-align: center;
+
+
+}
+
+.footer a {
+    color: white;
+    text-align: center;
+    margin: 1rem;
+
+
+}
+
+.coneccion {
+    border-bottom: 1px solid white;
+    text-align: center;
+    padding: 1rem;
+}
+
+.coneccion p {
+    color: white;
+    padding: 1rem;
+}
+
+.footer h3 {
+    color: white;
+
+}
+
+.horario p {
+    color: white;
+
+
+}
+
+.card {
+    display: inline;
+    text-align: center;
+
+
+
+}
+
+.card-body {
+    padding: 0 1rem;
+}
+
+.card-body h5 {
+    font-weight: bold;
+}
+
+.card-body p {
+    margin: 0;
+}
+
+
+
+
+.menu__titulo {
+    margin-top: 8rem;
+    text-align: center;
+    font-weight: 700;
+}
+
+.menu__subtitulo {
+    margin-top: 2rem;
+    text-align: center;
+    font-weight: 700;
+}
+.menuSuperior{
+    list-style-type: none;
+    text-align: center;
+}
+.menuSuperior li{
+    display: inline-block;
+   margin: 2rem;
+}
+.menuSuperior a{
+    text-decoration: none;
+    color: rgb(7, 7, 7);
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+
+/* */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(min-width: 345px) {
+    .menu__lista {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 1px;
+        width: 30%;
+        padding: 10px 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: all max-height 0.1s ease;
+        z-index: 100 !important;
+
+    }
+
+    input[type="checkbox"] {
+        display: none;
+    }
+
+    input[type="checkbox"]:checked~.menu__lista {
+        max-height: 300px;
+    }
+
+    .logo a {
+        font-size: 1.6rem;
+    }
+
+    .menu-icon svg {
+        width: 2rem;
+        height: 2rem;
+    }
+
+}
+
+@media(min-width: 576px) {
+
+    
+
+    .logo a {
+        font-size: 1.8rem;
+    }
+
+    .menu-icon svg {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    .menu__lista li{
+        margin-right: 0.5rem;
+        font-size: 1.7rem;
+    }
+
+    .coneccion iframe {
+        width: 80vw;
+        height: 40vh;
+
+    }
+
+    .ver__reserva {
+        padding: 1rem;
+    }
+    
+}
